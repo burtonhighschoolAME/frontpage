@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset:"utf-8">
+<title>Burton High School News</title>
+<link rel="stylesheet" type="text/css" href="css/normalize.css">
+<link rel="stylesheet" type="text/css" href="css/typography.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="javascript/page-functionality.js"></script>
+</head>
+
+	<body>
+    <!-- page header --> 
+    <header class="container" id="blog-header">
+        <h1><a href="index.html">Burton High School News</a></h1>
+    </header>
+    <!-- navigation bar --> 
+    <nav class="container" id="navbar">
+        <ul>
+            <li><a href="#blog" class="blog-link">Blog</a>
+            </li>
+            <li>
+                <a href="#classes" class="classes-link">Burton<span class="caret"></span></a>
+                <!-- dropdown menu --> 
+                <div>
+                    <ul>
+                        <li><a class="classes-link">News</a></li>
+                        <li><a class="classes-link">School</a></li>
+                        <li><a class="classes-link">Sports</a></li>
+                        <li><a class="classes-link">Entertainment</a></li>
+                </div>
+            </li>
+            <li><a href="#about" class="about-link">About</a></li>
+        </ul>
+    </nav>
+    <section class="container">
+    <!-- posts - will be displayed when page is first loaded or 'Blog' is clicked -->
+      <section class="content" id="blog">
+        <article id="simple-blog">
+            <h2><a href="#simple-blog">Latest Article</a></h2>
+            <p class="preview">This is a copy of the blog sample.</p><span class="read-more">...Read more>></span>
+            <p><a href="http://www.9lessons.info/2013/04/html5-template-design-for-blog.html">The following article</a> is another good guide of how to structure a blog using HTML 5.</p>
+          </article>
+          <article id="html5-semantics">
+            <h2><a href="#html5-semantics">HTML5 Semantics</a></h2>
+            <p class="preview">Each blog is an `article`. An `article` is any unit of content that could be published to another website. Think of it like everything that would be put in an article that could be published in a magazine, a newspaper, or a blog.</p><span class="read-more">...Read more>></span>
+            <p>HTML5's biggest difference from HTML4 and earlier is that it provides more tags that more accurately represent the different parts of a web page. For example, the "HTML for blog posts" is contained in a `section` tag, and each blog post is contained in an `article` tag. The semantics of HTML5 tags are more precise and intuitive than earlier versions of HTML, which would represent the "HTML for blog posts" as a `div` containing other `div` tags.</p>
+          </article>
+          <article id="using-jquery">
+            <h2><a href="#using-jquery">Using jQuery</a></h2>
+            <p class="preview">There's also some basic jQuery here. jQuery is a library that allows web pages to be responsive. This blog creates the effect of switching pages by dynamically showing and hiding different HTML content in response to click events on the anchor tags on the top of the page.</p><span class="read-more">...Read more>></span>
+            <p> To experience another example of jQuery, click on the "Like" button to see jQuery in action. Press "alt + cmd + j" to open devTools and see more detail of the commands executed in jQuery when clicking the "Like" button. </p>
+            <button>Like</button>
+            <p id="jquery-msg">Alright! You just manipulated the DOM using jQuery! Click on any of the text in this paragraph to hide it and show the Like button again.</p>
+          </article>
+          <article id="html5-canvas">
+            <h2><a href="#html5-canvas">HTML5 Canvas</a></h2>
+              <p class="preview">Add a new post here.</p><span class="read-more">...Read more>></span>
+          </article>
+      </section>
+      <!-- about - will be displayed when 'About' is clicked -->
+      <section class="content" id="about">
+          <p>This is an About page. It's shown and hidden using jQuery event listeners on the anchor tags on the nav bar.</p>
+      </section>
+
+      <!-- classes - will be displayed when 'My Classes' is clicked -->
+      <section class="content" id="classes">
+          <p>This is a page of classes that Mr. Keller teaches. It's shown and hidden using jQuery event listeners on the anchor tags on the nav bar.</p>
+          <h3 id="design">Design</h3>
+          <p>Choose a design to insert here! You can put your class information here as well.</p>
+          <h3 id="computer-art">Computer Art</h3>
+          <p>Choose some artwork to insert here!</p>
+          <h3 id="photography">Photography</h3>
+          <p>Choose a photo to insert here!</p>
+      </section>
+
+      <!-- sidebar -->
+      <aside id="sidebar">
+        <h4>Blog Posts</h4>
+        <ul>
+          <li><a href="#simple-blog">Simple Blog</a></li>
+          <li><a href="#html5-semantics">HTML5 Semantics</a></li>
+          <li><a href="#using-jquery">Using jQuery</a></li>
+          <li><a href="#html5-canvas">HTML5 Canvas</a></li>
+        </ul>
+      </aside>
+    </section>
+    <footer class="container" id="footer">
+        <div class="copyright">Here's the Footer! Copyright Shane Keller, 2014.</div>
+    </footer>
+        <!-- two column layout, with popular posts in one column -->
+
+</body>
+
+</html>
